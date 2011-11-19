@@ -1,6 +1,6 @@
 = autometal-piwik
 
-* http://github.com/Achillefs/tree/master
+* https://github.com/Achillefs/autometal-piwik
 * http://humbuckercode.co.uk/licks/gems/piwik
 
 == DESCRIPTION:
