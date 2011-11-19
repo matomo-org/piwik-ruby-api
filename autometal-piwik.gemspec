@@ -11,10 +11,10 @@ Gem::Specification.new do |s|
   s.email = ["ac@humbuckercode.co.uk"]
   s.extra_rdoc_files = ["License.txt", "Manifest.txt", "PostInstall.txt", "Todo.txt"]
   s.files = ["License.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "Todo.txt", "autometal-piwik.gemspec", "lib/piwik.rb", "lib/piwik/base.rb", "lib/piwik/site.rb", "lib/piwik/trackable.rb", "lib/piwik/user.rb", "script/console", "script/destroy", "script/generate", "script/txt2html", "setup.rb", "test/files/config/piwik.yml", "test/piwik_test.rb", "test/test_helper.rb"]
-  s.homepage = %q{http://github.com/Achillefs/tree/master}
+  s.homepage = %q{https://github.com/Achillefs/autometal-piwik}
   s.post_install_message = %q{
 For more information on piwik, see http://piwik.rubyforge.org or 
-http://github.com/Achillefs/piwik/
+https://github.com/Achillefs/autometal-piwik
 
 }
   s.rdoc_options = ["--main", "README.rdoc"]
