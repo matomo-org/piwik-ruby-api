@@ -146,7 +146,7 @@ module Piwik
     def visits(period=:day, date=Date.today)
       raise UnknownSite, "Site not existent in Piwik yet, call 'save' first" if new?
       result = call('VisitsSummary.getVisits', :idSite => id, :period => period, :date => date)
-      result.to_i
+      result['value']
     end
     
     # Returns the amount of unique visitors for the current site, filtered by 
@@ -159,7 +159,7 @@ module Piwik
     def unique_visitors(period=:day, date=Date.today)
       raise UnknownSite, "Site not existent in Piwik yet, call 'save' first" if new?
       result = call('VisitsSummary.getUniqueVisitors', :idSite => id, :period => period, :date => date)
-      result.to_i
+      result['value']
     end
     
     # Returns the amount of actions (pageviews) for the current site, filtered 
@@ -214,6 +214,23 @@ module Piwik
       result = call('Actions.getPageUrls', { :idSite => id, :period => :day, :date => Date.today, :segment => '', :expanded => '', :idSubtable => '' }.update(params))
       #puts "get_page_urls: #{result}"
       result
+    end
+
+    def bounce_count(period=:day, date=Date.today)
+      raise UnknownSite, "Site not existent in Piwik yet, call 'save' first" if new?
+      result = call('VisitsSummary.getBounceCount', :idSite => id, :period => period, :date => date)
+      result['value']
+    end
+
+    def sum_visits_length(period=:day, date=Date.today)
+      raise UnknownSite, "Site not existent in Piwik yet, call 'save' first" if new?
+      result = call('VisitsSummary.getSumVisitsLength', :idSite => id, :period => period, :date => date)
+      result['value']
+    end
+
+    def website_referrers(period=:day, date=Date.today)
+      raise UnknownSite, "Site not existent in Piwik yet, call 'save' first" if new?
+      call('Referers.getWebsites', :idSite => id, :period => period, :date => date)
     end
 
     private
