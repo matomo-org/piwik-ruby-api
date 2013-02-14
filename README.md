@@ -1,6 +1,6 @@
-# Autometal-Piwik [![Build Status](https://travis-ci.org/Achillefs/autometal-piwik.png?branch=master)](https://travis-ci.org/Achillefs/autometal-piwik)
+# Autometal-Piwik [![Build Status](https://travis-ci.org/piwik/piwik-ruby-api.png?branch=master)](https://travis-ci.org/piwik/piwik-ruby-api)
 
-Version 1.0.0 is a ground-up rewrite of the [autometal-piwik gem](https://github.com/Achillefs/autometal-piwik/tree/v0.6.1). It completely covers the Piwik API and should be easily extendable by users. We made no assumptions on how you wanna use your data, so we closely mirrored Piwik's API structure even if it looks kinda weird to a modern rubyist.
+Version 1.0.0 is a ground-up rewrite of the [autometal-piwik gem](https://github.com/piwik/piwik-ruby-api/tree/v0.6.1). It completely covers the Piwik API and should be easily extendable by users. We made no assumptions on how you wanna use your data, so we closely mirrored Piwik's API structure even if it looks kinda weird to a modern rubyist.
 
 We will also implement an extended `Piwik::Site` wrapper class that will give you ruby-friendly access to a lot of the data in a way we think is sane, but it will be up to you which interface you want to use.
 
@@ -64,7 +64,7 @@ Fastest way to get to know the client is by using the Piwik::Site wrapper class:
     #=> 170
 
 Not all methods are implemented on the wrapper class, although if you find yourself adding methods, please submit a pull request.
-You can have a look at [site_spec.rb](https://github.com/Achillefs/autometal-piwik/blob/master/spec/site_spec.rb) for an up-to-date list of available methods.
+You can have a look at [site_spec.rb](https://github.com/piwik/piwik-ruby-api/blob/master/spec/site_spec.rb) for an up-to-date list of available methods.
 
 ### Use the 'native' API
 This client also allows you to interact with the API the way its designers wanted it. Any method in the [api reference](http://piwik.org/docs/analytics-api/reference/) is made available almost verbatim:
