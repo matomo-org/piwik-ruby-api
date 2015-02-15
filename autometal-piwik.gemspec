@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
   s.executables   = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = ["lib"]
-  
+
   s.add_dependency('xml-simple')
   s.add_dependency('rest-client')
-  s.add_dependency('activesupport','~> 3.0')
+  s.add_dependency('activesupport','~> 4.0')
   s.add_development_dependency('rspec')
 end
