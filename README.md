@@ -1,6 +1,6 @@
 # Autometal-Piwik [![Build Status](https://travis-ci.org/piwik/piwik-ruby-api.png?branch=master)](https://travis-ci.org/piwik/piwik-ruby-api) [![Gem Version](https://badge.fury.io/rb/autometal-piwik.png)](http://badge.fury.io/rb/autometal-piwik)
 
-This is now the official Ruby client for Piwik. It completely covers the Piwik API and should be easily extendable by users. We made no assumptions on how you wanna use your data, so we closely mirrored Piwik's API structure even if it looks kinda weird to a modern rubyist.
+This is now the official Ruby client for Piwik. It completely covers the Piwik API and should be easily extendable by users. We made no assumptions on how you want to use your data, so we closely mirrored Piwik's API structure even if it looks kinda weird to a modern rubyist.
 
 We will also implement an extended `Piwik::Site` wrapper class that will give you ruby-friendly access to a lot of the data in a way we think is sane, but it will be up to you which interface you want to use.
 
@@ -82,7 +82,7 @@ That last call is exactly the same as calling `site.actions.page_urls(:period =>
 
 It is probably apparent, but the second way gives you full access to everything, all you need is the API reference and you're off. If you are simply after displaying the basic analytics values for a site, the wrapper is probably the way to go.
 
-For more information on Piwik and it’s API, see the [Piwik website](piwik.org) and the [Piwik API reference](http://piwik.org/docs/analytics-api/reference/).
+For more information on Piwik and it’s API, see the [Piwik website](http://piwik.org) and the [Piwik API reference](http://piwik.org/docs/analytics-api/reference/).
 
 ## Contributing
 
