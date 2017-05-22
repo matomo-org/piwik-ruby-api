@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<result>
+  <row>
+    <label>Action1</label>
+    <nb_visits>56</nb_visits>
+    <nb_events>77</nb_events>
+    <nb_events_with_value>0</nb_events_with_value>
+    <sum_event_value>0</sum_event_value>
+    <min_event_value>0</min_event_value>
+    <max_event_value>0</max_event_value>
+    <sum_daily_nb_uniq_visitors>56</sum_daily_nb_uniq_visitors>
+    <avg_event_value>0</avg_event_value>
+    <segment>eventAction==Action1</segment>
+    <idsubdatatable>2</idsubdatatable>
+  </row>
+  <row>
+    <label>Action2</label>
+    <nb_visits>45</nb_visits>
+    <nb_events>221</nb_events>
+    <nb_events_with_value>0</nb_events_with_value>
+    <sum_event_value>0</sum_event_value>
+    <min_event_value>0</min_event_value>
+    <max_event_value>0</max_event_value>
+    <sum_daily_nb_uniq_visitors>45</sum_daily_nb_uniq_visitors>
+    <avg_event_value>0</avg_event_value>
+    <segment>eventAction==Action2</segment>
+    <idsubdatatable>1</idsubdatatable>
+  </row>
+</result>

@@ -26,9 +26,9 @@ def stub_api_calls
   Piwik::Base.stub(:call) do |method,params,piwik_url,auth_token|
     resp_file = File.join(File.dirname(__FILE__),'files',"#{method}.xml")
     xml = if File.exists?(resp_file)
-      File.read resp_file
+      File.binread resp_file
     else
-      File.read File.join(success_response)
+      File.binread File.join(success_response)
     end
     if xml.is_a?(String) && xml.force_encoding('BINARY').is_binary_data?
       xml.force_encoding('BINARY')

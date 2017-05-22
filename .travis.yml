@@ -1,10 +1,58 @@
 language: ruby
+cache: bundler
 rvm:
-  - "1.8.7"
-  - "1.9.2"
-  - "1.9.3"
-  - jruby-18mode
-  - jruby-19mode
-  - rbx-18mode
-  - rbx-19mode
+  - 1.9.3
+  - 2.0
+  - 2.1
+  - 2.2
+  - 2.3.3
+  - 2.4.0
+  - jruby
+  - jruby-9.1.5.0
+  # - rbx-19mode
 script: bundle exec rspec spec
+sudo: false
+
+gemfile:
+  - ci/Gemfile.as32
+  - ci/Gemfile.as42
+  - ci/Gemfile.as50
+  - ci/Gemfile.as51
+
+# Exclude incompatible combinations (See http://logfile.swobspace.net/blog/2015/01/01/Ruby-and-Rails.html)
+matrix:
+  exclude:
+    # ActiveSupport 5.1
+    - rvm: 1.9.3
+      gemfile: ci/Gemfile.as51
+    - rvm: 2.0
+      gemfile: ci/Gemfile.as51
+    - rvm: 2.1
+      gemfile: ci/Gemfile.as51
+    - rvm: 2.2
+      gemfile: ci/Gemfile.as51
+    - rvm: jruby
+      gemfile: ci/Gemfile.as51
+    # ActiveSupport 5.0
+    - rvm: 1.9.3
+      gemfile: ci/Gemfile.as50
+    - rvm: 2.0
+      gemfile: ci/Gemfile.as50
+    - rvm: 2.1
+      gemfile: ci/Gemfile.as50
+    - rvm: 2.2
+      gemfile: ci/Gemfile.as50
+    - rvm: jruby
+      gemfile: ci/Gemfile.as50
+    # ActiveSupport 4.2
+    - rvm: 2.2
+      gemfile: ci/Gemfile.as40
+    - rvm: 2.3
+      gemfile: ci/Gemfile.as40
+    # ActiveSupport 3.2
+    - rvm: 2.1
+      gemfile: ci/Gemfile.as32
+    - rvm: 2.2
+      gemfile: ci/Gemfile.as32
+    - rvm: 2.3
+      gemfile: ci/Gemfile.as32
