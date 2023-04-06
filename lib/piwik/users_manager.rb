@@ -17,6 +17,7 @@ module Piwik
       userExists
       userEmailExists
       setUserAccess
+      getTokenAuth
       createAppSpecificTokenAuth
     }
     
