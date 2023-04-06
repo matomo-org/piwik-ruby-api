@@ -356,7 +356,7 @@
 		<referrerName>Google</referrerName>
 		<referrerKeyword>Suchbegriff nicht definiert</referrerKeyword>
 		<referrerKeywordPosition>1</referrerKeywordPosition>
-		<referrerUrl>http://piwik.org/faq/general/#faq_144</referrerUrl>
+		<referrerUrl>http://matomo.org/faq/general/faq_144</referrerUrl>
 		<referrerSearchEngineUrl>http://google.com</referrerSearchEngineUrl>
 		<referrerSearchEngineIcon>plugins/Referers/images/searchEngines/google.com.png</referrerSearchEngineIcon>
 		<operatingSystem>Windows 7</operatingSystem>
@@ -450,13 +450,13 @@
 		<latitude />
 		<longitude />
 		<provider>IP</provider>
-		<providerUrl>http://piwik.org/faq/general/#faq_52</providerUrl>
+		<providerUrl>http://matomo.org/faq/general/faq_52</providerUrl>
 		<referrerType>search</referrerType>
 		<referrerTypeName>Suchmaschinen</referrerTypeName>
 		<referrerName>Google</referrerName>
 		<referrerKeyword>Suchbegriff nicht definiert</referrerKeyword>
 		<referrerKeywordPosition>6</referrerKeywordPosition>
-		<referrerUrl>http://piwik.org/faq/general/#faq_144</referrerUrl>
+		<referrerUrl>http://matomo.org/faq/general/faq_144</referrerUrl>
 		<referrerSearchEngineUrl>http://google.com</referrerSearchEngineUrl>
 		<referrerSearchEngineIcon>plugins/Referers/images/searchEngines/google.com.png</referrerSearchEngineIcon>
 		<operatingSystem>Windows 7</operatingSystem>
@@ -556,7 +556,7 @@
 		<referrerName>Google</referrerName>
 		<referrerKeyword>Suchbegriff nicht definiert</referrerKeyword>
 		<referrerKeywordPosition>1</referrerKeywordPosition>
-		<referrerUrl>http://piwik.org/faq/general/#faq_144</referrerUrl>
+		<referrerUrl>http://matomo.org/faq/general/faq_144</referrerUrl>
 		<referrerSearchEngineUrl>http://google.com</referrerSearchEngineUrl>
 		<referrerSearchEngineIcon>plugins/Referers/images/searchEngines/google.com.png</referrerSearchEngineIcon>
 		<operatingSystem>Mac OS</operatingSystem>

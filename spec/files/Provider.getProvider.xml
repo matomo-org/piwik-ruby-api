@@ -9,7 +9,7 @@
 		<sum_visit_length>31414</sum_visit_length>
 		<bounce_count>150</bounce_count>
 		<nb_visits_converted>14</nb_visits_converted>
-		<url>http://piwik.org/faq/general/#faq_52</url>
+		<url>http://matomo.org/faq/general/faq_52</url>
 	</row>
 	<row>
 		<label>T-dialin</label>
@@ -75,7 +75,7 @@
 		<sum_visit_length>4895</sum_visit_length>
 		<bounce_count>5</bounce_count>
 		<nb_visits_converted>1</nb_visits_converted>
-		<url>http://piwik.org/faq/general/#faq_52</url>
+		<url>http://matomo.org/faq/general/faq_52</url>
 	</row>
 	<row>
 		<label>Btcentralplus</label>
