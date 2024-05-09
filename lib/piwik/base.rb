@@ -142,13 +142,13 @@ EOF
       def call(method, params, piwik_url=nil, auth_token=nil)
         params ||= {}
         raise MissingConfiguration, "Please edit ~/.piwik to include your piwik url and auth_key" if piwik_url.nil? || auth_token.nil?
-        url = "#{piwik_url}/index.php?"
+        url = "#{piwik_url}/index.php"
         params.merge!({:module => 'API', :format => 'xml', :method => method})
         params.merge!({:token_auth => auth_token}) unless auth_token.nil?
-        url << params.to_query
+        # url << params.map { |k, v| "#{k}=#{CGI.escape(v.to_s)}" }.join('&')
         verbose_obj_save = $VERBOSE
         $VERBOSE = nil # Suppress "warning: peer certificate won't be verified in this SSL session"
-        xml = RestClient.get(url)
+        xml = RestClient.post(url,params).body
         $VERBOSE = verbose_obj_save
         if xml.is_a?(String) && xml.force_encoding('BINARY').is_binary_data?
           xml.force_encoding('BINARY')
