@@ -1,0 +1,17 @@
+version: 2
+registries:
+  monsido-github:
+    type: git
+    url: https://github.com
+    username: x-access-token
+    password: ${{secrets.MONSIDO_GITHUB_PAT}}
+
+updates:
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
+    insecure-external-code-execution: allow
+    registries:
+      - monsido-github
